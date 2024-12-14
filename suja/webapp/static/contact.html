@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MODERN MUSE - Contact Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Lemon Moon - Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Helvetica', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            box-sizing: border-box;
+            color: #4A4A4A;
+            background-color: #FFF8E1;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
         }
 
         *, *::before, *::after {
@@ -20,7 +23,7 @@
         }
 
         header {
-            background: #2c3e50;
+            background: #F57C00;
             color: white;
             padding: 15px 20px;
             display: flex;
@@ -43,7 +46,7 @@
         }
 
         header nav a:hover {
-            color: #ff5722;
+            color: #FFEB3B;
         }
 
         .contact-banner {
@@ -52,23 +55,25 @@
             justify-content: center;
             background: url('contact.jpeg') no-repeat center center/cover;
             color: white;
-            height: 400px;
+            height: 250px; /* Reduced banner height */
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
             text-align: center;
         }
 
         .contact-banner h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: #f39c12;
+            font-family: 'Helvetica', sans-serif;
+            font-size: 2.5rem;
+            color: #FFEB3B;
         }
 
         .contact-section {
             display: flex;
             justify-content: center;
-            padding: 40px 20px;
-            background: #ffffff;
+            padding: 20px;
+            background: #FFF;
             gap: 40px;
+            flex-grow: 1;
+            flex-shrink: 0;
         }
 
         .contact-details, .contact-form {
@@ -83,8 +88,8 @@
         .contact-details h2, .contact-form h2 {
             font-size: 1.8rem;
             margin-bottom: 15px;
-            color: #2c3e50;
-            font-family: 'Playfair Display', serif;
+            color: #F57C00;
+            font-family: 'Helvetica', sans-serif;
             text-align: center;
         }
 
@@ -116,7 +121,7 @@
         .contact-form button {
             width: 100%;
             padding: 12px;
-            background: #ff5722;
+            background: #F57C00;
             color: white;
             font-size: 1.1rem;
             border: none;
@@ -126,53 +131,33 @@
         }
 
         .contact-form button:hover {
-            background: #e64a19;
+            background: #E64A19;
         }
 
         footer {
-            background: #2c3e50;
+            background: #F57C00;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 15px 0;
+            flex-shrink: 0; /* Ensures the footer stays at the bottom */
         }
 
         footer a {
-            color: #ff5722;
+            color: #FFEB3B;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
         footer a:hover {
-            color: #ecf0f1;
-        }
-
-        @media (max-width: 768px) {
-            .contact-details, .contact-form {
-                max-width: 100%;
-            }
-
-            .contact-banner h1 {
-                font-size: 2.5rem;
-            }
-
-            header nav a {
-                font-size: 0.9rem;
-                margin: 5px;
-            }
-
-            .contact-section {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
+            color: #FFF;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="logo1.jpeg" alt="MODERN MUSE Logo">
+        <img src="logo1.jpeg" alt="Lemon Moon Logo">
         <nav>
             <a href="home.html">Home</a>
             <a href="menu.html">Menu</a>
@@ -188,15 +173,15 @@
     <section class="contact-section">
         <div class="contact-details">
             <h2>Contact Us</h2>
-            <p><strong>Address:</strong> MODERN MUSE, Chennai, Tamilnadu, India</p>
+            <p><strong>Address:</strong> Lemon Moon, Chennai, Tamilnadu, India</p>
             <p><strong>Phone:</strong> +91 9342155161</p>
-            <p><strong>Email:</strong> modernmuse@gmail.com</p>
+            <p><strong>Email:</strong> lemonmoon@gmail.com</p>
             <p><strong>Hours:</strong> Mon-Sun: 9 AM - 10 PM</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 MODERN MUSE. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        <p>&copy; Designed by Anand 24900721</p>
     </footer>
 
 </body>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon Moon | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: 'Helvetica', sans-serif;
+            line-height: 1.4;
+            color: #4A4A4A;
+            background-color: #FFF8E1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh; /* Fit viewport height */
+            overflow: hidden; /* No scrolling */
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        /* Header Styling */
+        header {
+            background: #F57C00;
+            color: white;
+            padding: 5px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 10%; /* Proportional height */
+        }
+
+        header img {
+            height: 40px;
+            width: auto;
+        }
+
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        /* Banner Section */
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #F57C00;
+            color: white;
+            height: 20%; /* Proportional height */
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 2rem;
+            color: #FFEB3B;
+            margin: 0;
+        }
+
+        /* Image Section */
+        .highlight-image {
+            flex: 1; /* Take remaining height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .highlight-image img {
+            max-width: 60%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #F57C00;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            height: 10%; /* Proportional height */
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="logo1.jpg" alt="Lemon Moon Logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <h1>Welcome to Lemon Moon</h1>
+    </div>
+
+    <!-- Highlight Image Section -->
+    <div class="highlight-image">
+        <img src="vegmeals.jpeg" alt="Vegetarian Meals">
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Designed by Anand 24900721</p>
+    </footer>
+
+</body>
+
+</html>

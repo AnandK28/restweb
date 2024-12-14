@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon Moon | Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #FFFAF0;
+            color: #333333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        /* Header Styling */
+        header {
+            background: #FFB74D;
+            color: white;
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 12%;
+        }
+
+        header img {
+            height: 45px;
+            width: auto;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        /* Menu Title */
+        .menu-title {
+            text-align: center;
+            background-color: #FF9800;
+            color: #FFF8E1;
+            padding: 10px 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        /* Menu Grid Section */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            grid-template-rows: 1fr 1fr; /* 2 rows */
+            gap: 20px;
+            padding: 20px;
+            flex: 1; /* Expand to fill space */
+            background: #FFF8E1;
+        }
+
+        .menu-item {
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px; /* Adjusted height for proper display */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .menu-item p {
+            margin: 5px 0;
+            font-size: 1rem;
+            color: #FF5722;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #FFB74D;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            height: 8%;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="logo1.jpg" alt="Lemon Moon Logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <!-- Menu Title -->
+    <div class="menu-title">Our Menu</div>
+
+    <!-- Menu Grid Section -->
+    <div class="menu-grid">
+        <!-- Dosa -->
+        <div class="menu-item">
+            <img src="dosa.jpeg" alt="Dosa">
+            <h3>Dosa</h3>
+            <p>₹120</p>
+        </div>
+        <!-- Cocktail -->
+        <div class="menu-item">
+            <img src="cocktail.jpeg" alt="Cocktail">
+            <h3>Cocktail</h3>
+            <p>₹150</p>
+        </div>
+        <!-- Burger -->
+        <div class="menu-item">
+            <img src="burger.jpeg" alt="Burger">
+            <h3>Burger</h3>
+            <p>₹250</p>
+        </div>
+        <!-- Biryani -->
+        <div class="menu-item">
+            <img src="briyani.jpeg" alt="Biryani">
+            <h3>Biryani</h3>
+            <p>₹300</p>
+        </div>
+        <!-- Falooda -->
+        <div class="menu-item">
+            <img src="falooda.jpeg" alt="Falooda">
+            <h3>Falooda</h3>
+            <p>₹180</p>
+        </div>
+        <!-- Pasta -->
+        <div class="menu-item">
+            <img src="pasta.jpeg" alt="Pasta">
+            <h3>Pasta</h3>
+            <p>₹220</p>
+        </div>
+        <!-- Sandwich -->
+        <div class="menu-item">
+            <img src="sandwich.jpeg" alt="Sandwich">
+            <h3>Sandwich</h3>
+            <p>₹100</p>
+        </div>
+        <!-- Veg Meals -->
+        <div class="menu-item">
+            <img src="vegmeals.jpeg" alt="Veg Meals">
+            <h3>Veg Meals</h3>
+            <p>₹160</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Designed by Anand 24900721</p>
+    </footer>
+</body>
+
+</html>
